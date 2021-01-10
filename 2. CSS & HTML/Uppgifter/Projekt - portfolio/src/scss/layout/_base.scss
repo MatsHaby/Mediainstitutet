@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $whitetext;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    background-color: #1d1d1d;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: $whitetext;
+    text-decoration: none;
+}
+
+.wrapper {
+    position: relative;
+    height: 90vh;
+    overflow-y: auto;
+    background-color: $bgprimary;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+// ----------------------------------------------------------------------
+// ----------------------------------- MENU -----------------------------
+// ----------------------------------------------------------------------
+
+.nav {
+    position: fixed;
+    height: 10vh;
+    background-color: $bgsecondary;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    &--active {
+        color: $green;
+    }
+
+    &__icon {
+        font-size: 1.4rem;
+    }
+
+    &__list {
+        @include flex(row, space-around);
+        padding: 1em;
+        margin: 0;
+        height: 100%;
+        list-style: none;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__item-text {
+        display: block;
+    }
+
+    &__item a:hover,
+    &__item a:focus {
+        color: $green;
+        transition: color 0.25s;
+    }
+}
+
+// ----------------------------------------------------------------------
+// ----------------------------------- LOGO -----------------------------
+// ----------------------------------------------------------------------
+
+.logo {
+    display: flex;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 1em 2em;
+    align-items: center;
+
+    &__title {
+        display: none;
+    }
+
+    &__figure {
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    &__img {
+        margin: 0;
+        border-radius: 50px;
+    }
+
+    &__h1 {
+        position: relative;
+        font-size: 1rem;
+        color: $green;
+        left: -10px;
+    }
+
+    &__socialmedia-container {
+        font-size: 2rem;
+    }
+
+    &__social-icon {
+        padding: 0.1em;
+    }
+
+    &__social-icon:hover,
+    &__social-link:focus {
+        color: $green;
+        transform: rotate(5deg);
+        transition-property: color, transform;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+// ----------------------------------------------------------------------
+// ----------------------------------- MAIN -----------------------------
+// ----------------------------------------------------------------------
+
+.main {
+    &__wave {
+        animation-name: wave;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        transform-origin: 70% 70%;
+        display: inline-block;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &--padding {
+        padding: 0 1em 1em 1em;
+    }
+
+    &__h2 {
+        font-size: 1.6rem;
+        &::before {
+            content: "";
+            height: 10px;
+            width: 10px;
+            background-color: $green;
+            display: inline-block;
+            margin-right: 0.2em;
+        }
+    }
+
+    &__h3 {
+        color: $green;
+        font-size: 1.1rem;
+        margin-top: 2em;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        margin-right: 0.5em;
+        color: $green;
+    }
+
+    &__welcome-text {
+        @include bigtext;
+        padding: 1em 1em;
+    }
+
+    // Main - profile section - page: about
+    .profile {
+        &__text {
+            @include bigtext;
+            font-size: 1.3rem;
+        }
+    }
+
+    // Main - skills section - page: about
+    .skills {
+        &__container {
+            display: flex;
+            margin-top: 1em;
+        }
+        &__text {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        &__icon {
+            font-size: 3rem;
+
+            &--js {
+                color: yellow;
+            }
+
+            &--css {
+                color: #0a7ebe;
+            }
+
+            &--html {
+                color: #e7582b;
+            }
+        }
+
+        &__card {
+            @include flex(column);
+            height: 80px;
+            width: 80px;
+            background-color: $bgsecondary-light;
+            border-radius: 5px;
+
+            &:not(:last-child) {
+                margin-right: 2em;
+            }
+        }
+    }
+
+    // Main - work & education section - page: about
+    .cv {
+        &__title {
+            margin: 0;
+            display: inline-block;
+        }
+        &__icon {
+            color: $green;
+            margin-right: 3px;
+            width: 14px;
+
+            &--bigger-width {
+                width: 18px;
+            }
+        }
+        &__duration {
+            margin: 0;
+            font-size: 0.8rem;
+        }
+        &__location-text {
+            margin: 0;
+        }
+    }
+
+    // Main - page: Portfolio
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 20px;
+
+        &__project {
+            position: relative;
+            height: 150px;
+            width: 150px;
+
+            &:hover {
+                .projects__textarea {
+                    opacity: 1;
+                }
+            }
+        }
+        &__textarea {
+            @include flex;
+            position: absolute;
+            height: 100%;
+            opacity: 0;
+            width: 100%;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.801);
+            transition: opacity 0.25s ease-in;
+            border-radius: 5px;
+        }
+
+        &__img {
+            border-radius: 5px;
+        }
+    }
+}
+
+// ----------------------------------------------------------------------
+// ------------------------------- ANIMATIONS ---------------------------
+// ----------------------------------------------------------------------
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* Project Root └── scss ├── abstracts // Mixins, functions, variables ├── _mixins.scss  ├── _variables.scss              └── layout ├── _base.scss // Styles for mobile ├── _desktop.scss // Styles for desktop  ├── _tablet.scss // Styles for tablet */
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { color: #fff; font-family: "Montserrat", sans-serif; font-size: 0.9rem; line-height: 1.4; background-color: #1d1d1d; }
+
+img { width: 100%; height: auto; display: block; }
+
+a { color: #fff; text-decoration: none; }
+
+.wrapper { position: relative; height: 90vh; overflow-y: auto; background-color: #1d1d1d; }
+
+figure { margin: 0; padding: 0; }
+
+.nav { position: fixed; height: 10vh; background-color: #181818; bottom: 0; width: 100%; font-size: 0.8rem; font-weight: 500; }
+
+.nav--active { color: #00ae74; }
+
+.nav__icon { font-size: 1.4rem; }
+
+.nav__list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; padding: 1em; margin: 0; height: 100%; list-style: none; }
+
+.nav__item { text-align: center; }
+
+.nav__item-text { display: block; }
+
+.nav__item a:hover, .nav__item a:focus { color: #00ae74; -webkit-transition: color 0.25s; transition: color 0.25s; }
+
+.logo { display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 0.9rem; line-height: 1.6; padding: 1em 2em; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.logo__title { display: none; }
+
+.logo__figure { margin: 0; margin-right: 20px; }
+
+.logo__img { margin: 0; border-radius: 50px; }
+
+.logo__h1 { position: relative; font-size: 1rem; color: #00ae74; left: -10px; }
+
+.logo__socialmedia-container { font-size: 2rem; }
+
+.logo__social-icon { padding: 0.1em; }
+
+.logo__social-icon:hover, .logo__social-link:focus { color: #00ae74; -webkit-transform: rotate(5deg); transform: rotate(5deg); -webkit-transition-property: color, -webkit-transform; transition-property: color, -webkit-transform; transition-property: color, transform; transition-property: color, transform, -webkit-transform; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; transition-timing-function: ease-in-out; }
+
+.logo__container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.main__wave { -webkit-animation-name: wave; animation-name: wave; -webkit-animation-duration: 2.5s; animation-duration: 2.5s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-transform-origin: 70% 70%; transform-origin: 70% 70%; display: inline-block; }
+
+.main__list { list-style: none; padding: 0; }
+
+.main--padding { padding: 0 1em 1em 1em; }
+
+.main__h2 { font-size: 1.6rem; }
+
+.main__h2::before { content: ""; height: 10px; width: 10px; background-color: #00ae74; display: inline-block; margin-right: 0.2em; }
+
+.main__h3 { color: #00ae74; font-size: 1.1rem; margin-top: 2em; display: inline-block; margin-bottom: 0; }
+
+.main__icon { font-size: 1.5rem; margin-right: 0.5em; color: #00ae74; }
+
+.main__welcome-text { font-weight: bolder; color: #fff; margin-top: 0; font-size: 1.2rem; padding: 1em 1em; }
+
+.main .profile__text { font-weight: bolder; color: #fff; margin-top: 0; font-size: 1.2rem; font-size: 1.3rem; }
+
+.main .skills__container { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 1em; }
+
+.main .skills__text { margin: 0; font-weight: 500; }
+
+.main .skills__icon { font-size: 3rem; }
+
+.main .skills__icon--js { color: yellow; }
+
+.main .skills__icon--css { color: #0a7ebe; }
+
+.main .skills__icon--html { color: #e7582b; }
+
+.main .skills__card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 80px; width: 80px; background-color: #323232; border-radius: 5px; }
+
+.main .skills__card:not(:last-child) { margin-right: 2em; }
+
+.main .cv__title { margin: 0; display: inline-block; }
+
+.main .cv__icon { color: #00ae74; margin-right: 3px; width: 14px; }
+
+.main .cv__icon--bigger-width { width: 18px; }
+
+.main .cv__duration { margin: 0; font-size: 0.8rem; }
+
+.main .cv__location-text { margin: 0; }
+
+.main .projects { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(150px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); grid-gap: 20px; }
+
+.main .projects__project { position: relative; height: 150px; width: 150px; }
+
+.main .projects__project:hover .projects__textarea { opacity: 1; }
+
+.main .projects__textarea { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; position: absolute; height: 100%; opacity: 0; width: 100%; bottom: 0; background-color: rgba(0, 0, 0, 0.801); -webkit-transition: opacity 0.25s ease-in; transition: opacity 0.25s ease-in; border-radius: 5px; }
+
+.main .projects__img { border-radius: 5px; }
+
+@-webkit-keyframes wave { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  10% { -webkit-transform: rotate(14deg); transform: rotate(14deg); }
+  20% { -webkit-transform: rotate(-8deg); transform: rotate(-8deg); }
+  30% { -webkit-transform: rotate(14deg); transform: rotate(14deg); }
+  40% { -webkit-transform: rotate(-4deg); transform: rotate(-4deg); }
+  50% { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
+  60% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@keyframes wave { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  10% { -webkit-transform: rotate(14deg); transform: rotate(14deg); }
+  20% { -webkit-transform: rotate(-8deg); transform: rotate(-8deg); }
+  30% { -webkit-transform: rotate(14deg); transform: rotate(14deg); }
+  40% { -webkit-transform: rotate(-4deg); transform: rotate(-4deg); }
+  50% { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
+  60% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
+
+@media screen and (min-width: 700px) { .nav__list { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .nav__item:not(:last-child) { margin-right: 5em; }
+  .main { padding: 0 2em; overflow-y: auto; }
+  .main--grid { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(150px, 1fr))[2]; grid-template-columns: repeat(2, minmax(150px, 1fr)); -ms-grid-rows: auto; grid-template-rows: auto; grid-template-areas: "profile profile" "skills misc" "column1 column2" "interests language"; grid-gap: 40px; }
+  .main__h3 { margin-top: 0; }
+  .main .profile { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: profile; }
+  .main .profile__about { max-width: 70%; }
+  .main__column1 { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: column1; }
+  .main__column2 { -ms-grid-row: 3; -ms-grid-column: 2; grid-area: column2; }
+  .main__skills { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: skills; }
+  .main__interests { -ms-grid-row: 4; -ms-grid-column: 1; grid-area: interests; }
+  .main__language { -ms-grid-row: 4; -ms-grid-column: 2; grid-area: language; }
+  .main__misc { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: misc; } }
+
+@media screen and (min-width: 900px) { body { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; background-color: #000; height: 100vh; }
+  .wrapper { height: 85%; width: 90%; display: -ms-grid; display: grid; -ms-grid-columns: minmax(200px, 500px) minmax(420px, 1fr); grid-template-columns: minmax(200px, 500px) minmax(420px, 1fr); grid-template-areas: "header main"; max-width: 1400px; overflow: visible; border-left: 5px #00ae74 solid; }
+  .header { position: relative; display: -ms-grid; display: grid; -ms-grid-row: 1; -ms-grid-column: 1; grid-area: header; -ms-grid-columns: 90px minmax(100px, 400px); grid-template-columns: 90px minmax(100px, 400px); grid-template-areas: "nav logo"; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .nav { position: relative; height: 100%; font-size: 0.8rem; -ms-grid-row: 1; -ms-grid-column: 1; grid-area: nav; }
+  .nav__item:not(:last-child) { margin-right: 0em; margin-bottom: 4em; }
+  .nav__list { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; position: absolute; top: -5%; -ms-grid-row: 1; -ms-grid-column: 2; grid-area: logo; height: 110%; background: #1d1d1d; background: -webkit-gradient(linear, left bottom, left top, color-stop(17%, #1d1d1d), color-stop(32%, rgba(29, 29, 29, 0.4486)), color-stop(43%, rgba(29, 29, 29, 0.279132))), url("../img/matshaby_desktop.jpg"); background: linear-gradient(0deg, #1d1d1d 17%, rgba(29, 29, 29, 0.4486) 32%, rgba(29, 29, 29, 0.279132) 43%), url("../img/matshaby_desktop.jpg"); background-position: 55% 50%; background-size: cover; width: 100%; -webkit-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.75); box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.75); }
+  .logo__title { display: block; }
+  .logo__h1 { font-weight: bold; font-size: 3rem; margin: 0; display: block; }
+  .logo__figure { display: none; }
+  .logo__container { position: absolute; bottom: 10px; line-height: 0.8; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .logo__socialmedia-container { font-size: 2rem; }
+  .logo__social-icon { display: inline-block; }
+  .main { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: main; padding-bottom: 3em; }
+  .main__welcome-text { font-size: 1.8rem; margin-top: 1em; } }

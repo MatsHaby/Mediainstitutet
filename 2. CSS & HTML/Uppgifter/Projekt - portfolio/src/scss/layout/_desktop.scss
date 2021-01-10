@@ -1,0 +1,114 @@
+body {
+    @include flex;
+    background-color: $black;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 85%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: minmax(200px, 500px) minmax(420px, 1fr);
+    grid-template-areas: "header main";
+    max-width: 1400px;
+    overflow: visible;
+    border-left: 5px $green solid;
+}
+// ----------------------------------------------------------------------
+// ----------------------------------- HEADER -----------------------------
+// ----------------------------------------------------------------------
+
+.header {
+    position: relative;
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 90px minmax(100px, 400px);
+    grid-template-areas: "nav logo";
+    align-items: center;
+}
+
+// ----------------------------------------------------------------------
+// ----------------------------------- MENU -----------------------------
+// ----------------------------------------------------------------------
+
+.nav {
+    position: relative;
+    height: 100%;
+    font-size: 0.8rem;
+    grid-area: nav;
+
+    &__item:not(:last-child) {
+        margin-right: 0em;
+        margin-bottom: 4em;
+    }
+
+    &__list {
+        flex-direction: column;
+    }
+}
+
+// ----------------------------------------------------------------------
+// ----------------------------------- LOGO -----------------------------
+// ----------------------------------------------------------------------
+
+.logo {
+    @include flex;
+    position: absolute;
+    top: -5%;
+    grid-area: logo;
+    height: 110%;
+    background: rgb(29, 29, 29);
+    background: linear-gradient(
+            0deg,
+            rgba(29, 29, 29, 1) 17%,
+            rgba(29, 29, 29, 0.44859950816264005) 32%,
+            rgba(29, 29, 29, 0.27913172104779416) 43%
+        ),
+        url("../img/matshaby_desktop.jpg");
+    background-position: 55% 50%;
+    background-size: cover;
+    width: 100%;
+    box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.75);
+
+    &__title {
+        display: block;
+    }
+
+    &__h1 {
+        font-weight: bold;
+        font-size: 3rem;
+        margin: 0;
+        display: block;
+    }
+
+    &__figure {
+        display: none;
+    }
+
+    &__container {
+        position: absolute;
+        bottom: 10px;
+        line-height: 0.8;
+        flex-direction: column;
+    }
+
+    &__socialmedia-container {
+        font-size: 2rem;
+    }
+
+    &__social-icon {
+        display: inline-block;
+    }
+}
+
+// ----------------------------------------------------------------------
+// ----------------------------------- MAIN -----------------------------
+// ----------------------------------------------------------------------
+.main {
+    grid-area: main;
+    padding-bottom: 3em;
+    &__welcome-text {
+        font-size: 1.8rem;
+        margin-top: 1em;
+    }
+}

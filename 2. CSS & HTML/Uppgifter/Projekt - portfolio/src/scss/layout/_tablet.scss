@@ -1,0 +1,66 @@
+// ----------------------------------------------------------------------
+// ----------------------------------- MENU -----------------------------
+// ----------------------------------------------------------------------
+
+.nav {
+    &__list {
+        justify-content: center;
+    }
+    &__item:not(:last-child) {
+        margin-right: 5em;
+    }
+}
+
+// ----------------------------------------------------------------------
+// ----------------------------------- MAIN -----------------------------
+// ----------------------------------------------------------------------
+
+.main {
+    padding: 0 2em;
+    overflow-y: auto;
+    &--grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-template-rows: auto;
+        grid-template-areas:
+            "profile profile"
+            "skills misc"
+            "column1 column2"
+            "interests language";
+        grid-gap: 40px;
+    }
+
+    &__h3 {
+        margin-top: 0;
+    }
+
+    // Main - profile section - page: about
+    .profile {
+        grid-area: profile;
+        &__about {
+            max-width: 70%;
+        }
+    }
+
+    &__column1 {
+        grid-area: column1;
+    }
+    &__column2 {
+        grid-area: column2;
+    }
+
+    &__skills {
+        grid-area: skills;
+    }
+
+    &__interests {
+        grid-area: interests;
+    }
+    &__language {
+        grid-area: language;
+    }
+
+    &__misc {
+        grid-area: misc;
+    }
+}

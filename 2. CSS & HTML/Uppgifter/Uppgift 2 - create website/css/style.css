@@ -1,0 +1,447 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+/*
+ *  HERO IMAGE / CONTAINER
+ */
+
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../img/adam-miller-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 2em;
+}
+
+/*
+ *  HAMBURGER BUTTON FOR MENU
+ */
+
+.btn__hamburger {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  padding: 1em 1em;
+  cursor: pointer;
+  z-index: 11;
+  background: transparent;
+  border: none;
+}
+
+.btn__hamburger__bar {
+  display: block;
+  height: 6px;
+  width: 2.5em;
+  margin: 0.5em;
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #fff;
+}
+
+.btn__hamburger__bar--middle {
+  right: 7px;
+  position: relative;
+  transition: right 0.2s ease-out;
+}
+
+/*
+ *  Navigation
+ */
+
+.nav {
+  display: none;
+  background: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  flex-direction: column;
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-shadow: 0px 4px #d3d3d3;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__item {
+  list-style: none;
+  margin-top: 1.5em;
+}
+
+.nav-toggle {
+  display: block;
+}
+
+/*
+ * LOGO
+ */
+
+.hero__logo {
+  border: 4px solid;
+  width: 170px;
+  position: relative;
+  top: 30px;
+  left: 25px;
+  background: rgba(255, 249, 255, 0.4);
+}
+
+.hero__logo__h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero__logo__link {
+  color: #000;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.fa-arrow-right {
+  margin-left: 4px;
+  font-size: 1.2rem;
+}
+
+/*
+ *  Arrow down
+ */
+
+.fa-arrow-down {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+/*
+ * Render the `main` element consistently in IE.
+ */
+
+/* ==========================================================================
+   MAIN
+   ========================================================================== */
+
+/*
+ * MAIN
+ */
+
+.main {
+  color: #fff;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/space-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0 2em 5em;
+}
+
+/*
+ * ARTICLE
+ */
+
+.article {
+  position: relative;
+}
+
+.article__link {
+  color: #d20071;
+}
+
+.article__p {
+  line-height: 1.8;
+}
+
+.article__heading {
+  position: relative;
+  padding: 2em 0 2em 0;
+}
+
+.article__heading__h2 {
+  position: relative;
+  z-index: 3;
+  font-size: 3rem;
+  text-shadow: 0px 4px 4px #000000;
+  margin: 0;
+}
+
+.article__heading__h2--accent {
+  position: absolute;
+  color: #aeaeae;
+  z-index: -1;
+  font-weight: bold;
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+  top: 10px;
+  left: 45px;
+  font-size: 4rem;
+}
+
+.article__quote::before {
+  content: open-quote;
+}
+
+.article__quote::after {
+  content: close-quote;
+}
+
+.article__quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.article__citate {
+  display: none;
+}
+
+.article__img--majortom {
+  display: none;
+}
+
+.cookie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  background-color: #020522;
+  width: 100%;
+  padding: 0 1em;
+}
+
+.cookie__text {
+  color: #d20071;
+  text-shadow: 1px 0px 7px #e2057b;
+  font-size: 0.7rem;
+}
+
+.btn {
+  padding: 12px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border: none;
+}
+
+.btn--accept {
+  background-color: #060f6a;
+  color: #fff;
+}
+
+.hide--element {
+  display: none;
+}
+
+/* ==========================================================================
+   MEDIA QURIES
+   ========================================================================== */
+
+@media (min-width: 800px) {
+  .hero {
+    background-image: url(../img/adam-miller-desktop.jpg);
+  }
+
+  .btn__hamburger:hover .btn__hamburger__bar--middle {
+    right: 0;
+    transition: right 0.2s ease-in;
+  }
+
+  .main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/space-desktop.jpg);
+    padding: 0px 5em 5em;
+  }
+
+  .hero__logo {
+    width: 250px;
+    height: 250px;
+    left: 80px;
+  }
+
+  .hero__logo__h1 {
+    font-size: 3.6rem;
+    margin-top: 0.5em;
+  }
+
+  .nav__link:hover {
+    border-bottom: 5px solid #d20071;
+  }
+
+  .hero__logo__break {
+    display: none;
+  }
+
+  .hero__logo__link {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+  }
+
+  .cookie__text {
+    font-size: 1rem;
+  }
+
+  .cookie__btn--accept {
+    padding: 12px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #060f6a;
+    color: #fff;
+    border: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__logo {
+    width: 400px;
+    height: 400px;
+    left: 200px;
+  }
+
+  .hero__logo__h1 {
+    font-size: 5rem;
+  }
+
+  .hero__logo__link:active {
+    outline: 5px dashed red;
+  }
+
+  .hero__logo__link:hover > .fa-arrow-right,
+  .article__link:hover > .fa-arrow-right {
+    position: relative;
+    left: 10px;
+    transition: left 0.2s ease-in-out;
+  }
+
+  .article {
+    position: relative;
+    display: grid;
+    grid-template-columns:
+      minmax(250px, 1fr) minmax(250px, 1fr) minmax(50px, 1fr) minmax(250px, 1fr)
+      minmax(250px, 1fr);
+    grid-template-rows: 2fr 1fr 2fr 2fr;
+    grid-template-areas:
+      "articleheading articleheading . citate citate"
+      "h2 h2 . citate citate"
+      "section1 section1 . section2 section2"
+      "section1 section1 . section2 section2";
+    padding: 0 2em;
+  }
+
+  .article__p {
+    font-size: 1.2rem;
+  }
+
+  .fa-arrow-down {
+    font-size: 1.8rem;
+  }
+
+  .article__section--1 {
+    grid-area: section1;
+  }
+  .article__section--2 {
+    grid-area: section2;
+    padding-top: 2em;
+  }
+
+  .article__heading {
+    grid-area: articleheading;
+  }
+
+  .article__heading__h2 {
+    font-size: 6.3rem;
+  }
+
+  .article__heading__h2--accent {
+    font-size: 8rem;
+    top: 42px;
+    left: 10px;
+  }
+
+  .article__h3 {
+    grid-area: h2;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  .article__quote {
+    padding-top: 1em;
+    font-size: 1.8rem;
+    line-height: normal;
+  }
+
+  .article__citate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    grid-area: citate;
+    background: linear-gradient(
+      167deg,
+      rgba(12, 12, 12, 1) 0%,
+      rgba(174, 174, 174, 0.633473457742472) 50%,
+      rgba(1, 1, 1, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    line-height: 1.2;
+    padding-top: 2em;
+  }
+
+  .article__img--majortom {
+    display: block;
+    float: right;
+    padding: 5px;
+  }
+
+  .main__br {
+    display: none;
+  }
+}
+
+@media print {
+  header {
+    display: none;
+  }
+
+  .article__link {
+    display: none;
+  }
+
+  .article__quote {
+    border: none;
+  }
+
+  .cookie {
+    display: none;
+  }
+}

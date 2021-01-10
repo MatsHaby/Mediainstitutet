@@ -1,0 +1,27 @@
+/*
+Project Root
+└── scss
+    ├── abstracts // Mixins, functions, variables
+        ├── _mixins.scss 
+        ├── _variables.scss             
+    └── layout
+        ├── _base.scss // Styles for mobile
+        ├── _desktop.scss // Styles for desktop 
+        ├── _tablet.scss // Styles for tablet
+*/
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "layout/base";
+
+// ----------------------------------------------------------------------
+// -------------------------- MEDIA QUERIES -----------------------------
+// ----------------------------------------------------------------------
+
+@media screen and (min-width: 700px) {
+    @import "layout/tablet";
+}
+
+@media screen and (min-width: 900px) {
+    @import "layout/desktop";
+}
