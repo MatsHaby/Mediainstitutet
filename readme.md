@@ -1,4 +1,4 @@
-# Courses
+## Kurser
 
 -   [ ] Kompetensportfölj och entreprenörskap
 -   [x] HTML och CSS
