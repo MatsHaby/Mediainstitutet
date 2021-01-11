@@ -4,9 +4,9 @@ I'm currently a student at mediainstitutet in Sweden for Front-End Developer [20
 
 ## Courses
 
--   [ ] Competence portfolio and entrepreneurship > ongoing
+-   [ ] Competence portfolio and entrepreneurship <span style="color:green">> ongoing</span>
 -   [x] HTML and CSS
--   [ ] JavaScript - Basics > ongoing
+-   [ ] JavaScript - Basics <span style="color:green">> ongoing</span>
 -   [ ] Dynamic webb development
 -   [ ] Project work with agile methods
 -   [ ] Graphical tools for interface design
