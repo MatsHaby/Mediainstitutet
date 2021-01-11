@@ -4,18 +4,20 @@ I'm currently a student at mediainstitutet in Sweden for Front-End Developer [20
 
 ## Courses
 
--   [ ] Competence portfolio and entrepreneurship 🎮 ongoing
--   [x] HTML and CSS
--   [ ] JavaScript - Basics 🎮 ongoing
--   [ ] Dynamic webb development
--   [ ] Project work with agile methods
--   [ ] Graphical tools for interface design
--   [ ] JavaScript - Advanced
--   [ ] Working methodology for developers
--   [ ] UX/Usability
--   [ ] LIA 1 (internship1)
--   [ ] LIA 2 (internship2)
--   [ ] Master thesis
+| course                                    | Status     |
+| ----------------------------------------- | ---------- |
+| Competence portfolio and entrepreneurship | 🎮 ongoing |
+| HTML and CSS                              | ✅         |
+| JavaScript - Basics                       | 🎮 ongoing |
+| Dynamic webb development                  |
+| Project work with agile methods           |
+| Graphical tools for interface design      |
+| JavaScript - Advanced                     |
+| Working methodology for developers        |
+| UX/Usability                              |
+| LIA 1 (internship1)                       |
+| LIA 2 (internship2)                       |
+| Master thesis                             |
 
 ## HTML and CSS
 
