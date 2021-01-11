@@ -2,6 +2,8 @@
 
 I'm currently a student at mediainstitutet in Sweden for Front-End Developer [2020-12 - 2022-09]
 
+you can read more here: [Mediainstitutet](https://medieinstitutet.se/utbildningar/front-end-developer/)
+
 ## Courses
 
 | course                                    | Status     |
