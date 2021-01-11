@@ -21,8 +21,8 @@ I'm currently a student at mediainstitutet in Sweden for Front-End Developer [20
 
 ## HTML and CSS
 
-[Task 1 - Semantic HTML](https://sad-morse-5d05a2.netlify.app/2.%20CSS%20%26%20HTML/Tasks/Task%201%20-%20semantic%20HTML/resume/)
+-   [Task 1 - Semantic HTML](https://sad-morse-5d05a2.netlify.app/2.%20CSS%20%26%20HTML/Tasks/Task%201%20-%20semantic%20HTML/resume/)
 
-[Task 2 - Create website after a brief](https://sad-morse-5d05a2.netlify.app/2.%20CSS%20%26%20HTML/Tasks/Task%202%20-%20create%20website)
+-   [Task 2 - Create website after a brief](https://sad-morse-5d05a2.netlify.app/2.%20CSS%20%26%20HTML/Tasks/Task%202%20-%20create%20website)
 
-[Project - Create a portfolio/resume](https://sad-morse-5d05a2.netlify.app/2.%20CSS%20%26%20HTML/Tasks/Project%20-%20portfolio/dist/)
+-   [Project - Create a portfolio/resume](https://sad-morse-5d05a2.netlify.app/2.%20CSS%20%26%20HTML/Tasks/Project%20-%20portfolio/dist/)
