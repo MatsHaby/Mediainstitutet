@@ -1,20 +1,23 @@
-# Mediainstitutet - Front End Developer 2021-12 - 2022-09
+# Mediainstitutet - Front End Developer
+
+I'm currently a student at mediainstitutet in Sweden. Here i study the program: Front-End Developer [2020-12 - 2022-09]
 
 ## Courses
 
--   [ ] Kompetensportfölj och entreprenörskap
--   [x] HTML och CSS
--   [ ] JavaScript - Grundkurs
--   [ ] Dynamisk webbutveckling
--   [ ] Projektarbete med agila metoder
--   [ ] Grafiska verktyg för gränssnittsdesign
--   [ ] JavaScript - Fördjupning
--   [ ] Arbetsmetodik för utvecklare
+-   [ ] Competence portfolio and entrepreneurship
+-   [x] HTML and CSS
+-   [ ] JavaScript - Basics
+-   [ ] Dynamic webb development
+-   [ ] Project work with agile methods
+-   [ ] Graphical tools for interface design
+-   [ ] JavaScript - Advanced
+-   [ ] Working methodology for developers
 -   [ ] UX/Usability
--   [ ] LIA 1
--   [ ] LIA 2
--   [ ] Examensarbete
+-   [ ] LIA 1 (internship1)
+-   [ ] LIA 2 (internship2)
+-   [ ] Master thesis
 
 ## HTML and CSS
 
-[Task 1 - Semantic HTML](https://nifty-bassi-f7e468.netlify.app/50%20projects%2050%20days/day%201%20-%20exanding%20cards/), [Extended version](https://nifty-bassi-f7e468.netlify.app/50%20projects%2050%20days/day%201%20-%20exanding%20cards/extended/)
+[Task 1 - Semantic HTML](https://sad-morse-5d05a2.netlify.app/2. CSS %26 HTML/Tasks/Task 1 - semantic HTML/resume/)
+[Task 2 - Create website after a brief](https://sad-morse-5d05a2.netlify.app/2. CSS %26 HTML/Tasks/Task 2 - create website)
