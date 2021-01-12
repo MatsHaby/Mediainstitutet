@@ -145,3 +145,22 @@ figure { margin: 0; padding: 0; }
   .logo__social-icon { display: inline-block; }
   .main { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: main; padding-bottom: 3em; }
   .main__welcome-text { font-size: 1.8rem; margin-top: 1em; } }
+
+@media print { @page { margin: 0; }
+  body { margin: 1.6cm; }
+  a[href]:after { content: none !important; }
+  img[src]:after { content: none !important; }
+  .nav { display: none; }
+  .wrapper { overflow-y: visible; }
+  .main { padding: 0 2em; overflow: visible; }
+  .main--grid { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(150px, 1fr))[2]; grid-template-columns: repeat(2, minmax(150px, 1fr)); -ms-grid-rows: auto; grid-template-rows: auto; grid-template-areas: "profile profile" "skills misc" "column1 column2" "interests language"; grid-gap: 40px; position: relative; }
+  .main__h3 { margin-top: 0; }
+  .main .print--break { page-break-after: always; top: 0px; }
+  .main .profile { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: profile; }
+  .main .profile__about { max-width: 70%; }
+  .main__column1 { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: column1; }
+  .main__column2 { -ms-grid-row: 3; -ms-grid-column: 2; grid-area: column2; }
+  .main__skills { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: skills; }
+  .main__interests { -ms-grid-row: 4; -ms-grid-column: 1; grid-area: interests; }
+  .main__language { -ms-grid-row: 4; -ms-grid-column: 2; grid-area: language; }
+  .main__misc { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: misc; } }

@@ -25,3 +25,7 @@ Project Root
 @media screen and (min-width: 900px) {
     @import "layout/desktop";
 }
+
+@media print {
+    @import "layout/print";
+}
