@@ -6,11 +6,11 @@ you can read more here: [Mediainstitutet](https://medieinstitutet.se/utbildninga
 
 ## Courses
 
-| course                                    | Status     |
-| ----------------------------------------- | ---------- |
-| Competence portfolio and entrepreneurship | 🎮 ongoing |
-| HTML and CSS                              | ✅         |
-| JavaScript - Basics                       | 🎮 ongoing |
+| course                                    | Status |
+| ----------------------------------------- | ------ |
+| Competence portfolio and entrepreneurship | 🎮     |
+| HTML and CSS                              | ✅     |
+| JavaScript - Basics                       | 🎮     |
 | Dynamic webb development                  |
 | Project work with agile methods           |
 | Graphical tools for interface design      |
