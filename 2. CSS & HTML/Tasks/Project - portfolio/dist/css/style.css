@@ -12,11 +12,11 @@ a { color: #fff; text-decoration: none; }
 
 figure { margin: 0; padding: 0; }
 
-.nav { position: fixed; height: 10vh; background-color: #181818; bottom: 0; width: 100%; font-size: 0.8rem; font-weight: 500; }
+.nav { position: fixed; height: 8vh; background-color: #181818; bottom: 10px; width: 95%; border-radius: 15px; font-size: 0.7rem; font-weight: 500; left: 2.5%; }
 
 .nav--active { color: #00ae74; }
 
-.nav__icon { font-size: 1.4rem; }
+.nav__icon { font-size: 1rem; }
 
 .nav__list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; padding: 1em; margin: 0; height: 100%; list-style: none; }
 
@@ -116,7 +116,8 @@ figure { margin: 0; padding: 0; }
   60% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
 
-@media screen and (min-width: 700px) { .nav__list { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+@media screen and (min-width: 700px) { .nav { width: 60%; left: 23.5%; }
+  .nav__list { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .nav__item:not(:last-child) { margin-right: 5em; }
   .main { padding: 0 2em; overflow-y: auto; }
   .main--grid { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(150px, 1fr))[2]; grid-template-columns: repeat(2, minmax(150px, 1fr)); -ms-grid-rows: auto; grid-template-rows: auto; grid-template-areas: "profile profile" "skills misc" "column1 column2" "interests language"; grid-gap: 40px; }
@@ -133,7 +134,7 @@ figure { margin: 0; padding: 0; }
 @media screen and (min-width: 900px) { body { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; background-color: #000; height: 100vh; }
   .wrapper { height: 85%; width: 90%; display: -ms-grid; display: grid; -ms-grid-columns: minmax(200px, 500px) minmax(420px, 1fr); grid-template-columns: minmax(200px, 500px) minmax(420px, 1fr); grid-template-areas: "header main"; max-width: 1400px; overflow: visible; border-left: 5px #00ae74 solid; }
   .header { position: relative; display: -ms-grid; display: grid; -ms-grid-row: 1; -ms-grid-column: 1; grid-area: header; -ms-grid-columns: 90px minmax(100px, 400px); grid-template-columns: 90px minmax(100px, 400px); grid-template-areas: "nav logo"; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .nav { position: relative; height: 100%; font-size: 0.8rem; -ms-grid-row: 1; -ms-grid-column: 1; grid-area: nav; }
+  .nav { position: relative; height: 100%; border-radius: 0; width: 100%; left: 0; height: 0; font-size: 0.8rem; -ms-grid-row: 1; -ms-grid-column: 1; grid-area: nav; }
   .nav__item:not(:last-child) { margin-right: 0em; margin-bottom: 4em; }
   .nav__list { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; position: absolute; top: -5%; -ms-grid-row: 1; -ms-grid-column: 2; grid-area: logo; height: 110%; background: #1d1d1d; background: -webkit-gradient(linear, left bottom, left top, color-stop(17%, #1d1d1d), color-stop(32%, rgba(29, 29, 29, 0.4486)), color-stop(43%, rgba(29, 29, 29, 0.279132))), url("../img/matshaby_desktop.jpg"); background: linear-gradient(0deg, #1d1d1d 17%, rgba(29, 29, 29, 0.4486) 32%, rgba(29, 29, 29, 0.279132) 43%), url("../img/matshaby_desktop.jpg"); background-position: 55% 50%; background-size: cover; width: 100%; -webkit-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.75); box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.75); }
@@ -144,7 +145,8 @@ figure { margin: 0; padding: 0; }
   .logo__socialmedia-container { font-size: 2rem; }
   .logo__social-icon { display: inline-block; }
   .main { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: main; padding-bottom: 3em; }
-  .main__welcome-text { font-size: 1.8rem; margin-top: 1em; } }
+  .main__welcome-text { font-size: 1.8rem; margin-top: 1em; }
+  .main__illustrator { height: 500px; } }
 
 @media print { @page { margin: 0; }
   body { margin: 1.6cm; }
