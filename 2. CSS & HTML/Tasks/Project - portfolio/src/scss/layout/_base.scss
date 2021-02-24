@@ -4,7 +4,7 @@
 
 body {
     color: $whitetext;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
     line-height: 1.4;
     background-color: #1d1d1d;
@@ -160,7 +160,7 @@ figure {
     &__h2 {
         font-size: 1.6rem;
         &::before {
-            content: "";
+            content: '';
             height: 10px;
             width: 10px;
             background-color: $green;
@@ -263,7 +263,7 @@ figure {
     // Main - page: Portfolio
     .projects {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         grid-gap: 20px;
 
         &__project {
@@ -282,6 +282,7 @@ figure {
             position: absolute;
             height: 100%;
             opacity: 0;
+            text-align: center;
             width: 100%;
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.801);
